@@ -175,3 +175,12 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
     border: #ccc 1px solid;
 }
+
+.navbar navbar-expand-md{
+   background-color: #F8F8F8;
+    border-color: #E7E7E7;
+}
+
+.navbar navbar-expand-md .navbar-brand:hover{
+    color: #666;
+}
