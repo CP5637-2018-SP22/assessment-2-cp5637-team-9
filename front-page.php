@@ -19,6 +19,12 @@
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
       <?php wp_head(); ?>
+      <style>
+          .showcase{
+              background:url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>)no-repeat center center;
+          }
+      
+      </style>
       
   </head>
 
@@ -51,9 +57,9 @@
       </div>
     <section class="showcase" style="background-color: #333; ">
            <div class="container">
-               <h1>Custom Bootstrap Wordpress Theme</h1>
-               <P>Hum Thume</P>
-               <a class="btn btn-primary btn-lg">Read More</a>
+               <h1><?php echo get_theme_mod('showcase_heading', 'Custom Bootstrap Wordpress Theme'); ?> </h1>
+               <P><?php echo get_theme_mod('showcase_text', 'Hum Thume'); ?> </P>
+               <a href="<?php echo get_theme_mod('btn_url', 'http://test.com'); ?>" class="btn btn-primary btn-lg"><?php echo get_theme_mod('btn_text', 'Get Started'); ?></a>
                </div>
            </section>
 <section class="boxes">
